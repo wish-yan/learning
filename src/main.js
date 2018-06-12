@@ -3,26 +3,19 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import fastClick from 'fastclick'
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-import store from './store/store'
-import "babel-polyfill"
-// 通过import引入外部css
-import 'styles/reset.css'
-import 'styles/border.css'
-import 'styles/iconfont.css'
-import 'swiper/dist/css/swiper.css'
+import axios from 'axios'
+import '@/assets/styles/reset.css'
+import '@/assets/styles/border.css'
+import '@/assets/styles/iconfont.css'
+
 
 Vue.config.productionTip = false
-// 引入fastClick解决300ms延迟
-fastClick.attach(document.body)
-Vue.use(VueAwesomeSwiper, /* { default global options } */)
+Vue.prototype.$ajax= axios
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  store,
   components: { App },
   template: '<App/>'
 })

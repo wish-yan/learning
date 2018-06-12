@@ -4,7 +4,7 @@
        <detail-Header></detail-Header>
        <detail-List   :categoryList="categoryList" :gallaryImgs="gallaryImgs"></detail-List>
        <div style="height:112rem">
-           
+
        </div>
     </div>
 </template>

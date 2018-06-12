@@ -54,7 +54,7 @@ export default {
     position absolute
     left .2rem
     top .2rem
-    width .8rem 
+    width .8rem
     height .8rem
     line-height .8rem
     border-radius .4rem
@@ -73,19 +73,19 @@ export default {
     font-size .32rem
     color #fff
     position fixed
-    left 0 
+    left 0
     top 0
     z-index 5
     display flex
     flex-direction row
     .header-fixd-abs
         display inline-block
-        width .8rem 
+        width .8rem
         height .8rem
         margin-left .2rem
         color #ffffff
     .header-tit
         flex 1
-        justify-content  center 
+        justify-content  center
         margin-left 28%
 </style>
